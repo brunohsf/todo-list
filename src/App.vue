@@ -1,17 +1,19 @@
 <template>
-
-<div>
-  <TodoList/>
-</div>
+  <div>
+    <Header />
+    <TodoList />
+  </div>
 </template>
 
 <script>
 import TodoList from "./components/TodoList.vue";
+import Header from "./components/Header.vue";
 
 export default {
   name: "App",
   components: {
     TodoList,
+    Header,
   },
 };
 </script>
@@ -24,11 +26,6 @@ export default {
 h1 {
   text-align: center;
   color: darkblue;
-}
-
-.container {
-  max-width: 50%;
-  margin: auto;
 }
 
 </style>
